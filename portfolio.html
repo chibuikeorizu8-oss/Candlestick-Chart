@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoSignalHub - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="signals.html">Signals</a>
+    <a href="charts.html">Charts</a>
+    <a href="orderbook.html">Order Book</a>
+    <a href="tradehistory.html">Trade History</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="categories.html">Categories</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>💼 Portfolio Tracker</h2>
+    <form id="portfolioForm">
+      <label>Coin Symbol (e.g., BTCUSDT):</label>
+      <input type="text" id="coinSymbol" required>
+      <label>Amount Held:</label>
+      <input type="number" id="coinAmount" step="0.0001" required>
+      <button type="submit">Add to Portfolio</button>
+    </form>
+
+    <table id="portfolioTable">
+      <tr><th>Coin</th><th>Amount</th><th>Price</th><th>Value</th></tr>
+    </table>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>Total Portfolio Value</h3>
+        <p id="portfolioValue">$0</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
